@@ -1,12 +1,76 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Кэт энерджи</title>
+    </head>
+    <body class="page_body">
+        <header class="page-header_wrapper">
+                <a class="page-header_logo">
+                  <img  width="202" height="59" src="/source/img/logo-desktop.svg" alt="логотип">
+                </a>
+            <nav class="page-header_main-nav">
+                <button class="main-nav_toggle" type="button">
+                    <span class="hidden">открыть меню</span></button>
+                <ul class="main-nav_list">
+                    <li class="list_item-carrent"><a href="#" >главная</a></li>
+                    <li class="list_item"><a href="catalog.html">каталог продукции</a></li>
+                    <li class="list_item"><a href="forma.html">подбор программы</a></li>
+                </ul>
+            </nav>
+            <div class="page-header_user-nav">
+            <h1>Функциональное<br>питание для котов</h1>
+            <p class="user-nav_slogan">Занялся собой? Займись котом!</p>
+            <a class="user-nav_button" href="forma.html">подобрать программу</a>
+            </div>
+            <img class="user-nav_img" src="/source/img/index-can.png" width="552" height="449" alt="стаканчик 500г питание для котов">
+        </header>
+        <main class="page-main">
+         <section class="offer">
+            <h2 class="hidden">предложения для худеющих и набирающих</h2>
+            <div class="offer_wrapper">
+                <article class="fat">
+                    <h3>похудение</h3>
+                    <p>Ваш кот весит больше собаки и почти утратил<br>способность лазить по деревьям? Пора на диету!
+                    <br>Cat Energy Slim поможет вашему питомцу<br>сбросить лишний вес.</p>
+                  <div class="fat_icon"><img src="/source/img/cat-slim.svg" alt="черный худой кот" width="140" height="192">
+                </div>
+                <a class="fat_link" href="catalog.html">каталог slim</a>
+                </article>
+                <article class="slim">
+                    <h3>набор массы</h3>
+                    <p>Заработать авторитет среди дворовых котов<br>и даже собак? Серия Cat Energy Pro поможет<br>
+                         вашему коту нарастить необходимые<br> мышцы!</p>
+                  <div class="slim_icon"><img src="/source/img/cat-pro.svg" alt="пантера" width="140" height="192">
+                </div>
+                <a class="slim_link" href="catalog.html">каталог pro</a>
+                </article>
+            </div>
+         </section>
+         <section class="marketing">
+            <h2>Как это работает</h2>
+            <div class="marketing_block_block1">
+                <img class="block_image" width="80" height="80" src="/source/img/icon_leaf.svg" alt="иконка лист">
+                <p>Функциональное питание<br>cодержит только полезные<br>питательные вещества.</p>
+                <span>1</span>
+            </div>
+            <div class="marketing_block_block2">
+              <img class="block_image" width="80" height="80" src="/source/img/Group.svg" alt="иконка воды">
+              <p>Выпускается в виде порошка,<br>который нужно лишь залить<br>кипятком и готово.</p>
+              <span>2</span>
+          </div>
+          <div class="marketing_block_block1">
+            <img class="block_image" width="80" height="80" src="/source/img/Fork.svg" alt="иконка вилка">
+            <img class="block_image" width="80" height="80" src="/source/img/Knife.svg" alt="иконка нож">
+            <p>Замените один-два приема<br>обычной еды на наше<br>функциональное питание.</p>
+            <span>3</span>
+        </div>
+        <div class="marketing_block_block1">
+          <img class="block_image" width="80" height="80" src="/source/img/alarm.svg" alt="иконка будильник">
+          <p>Уже через месяц наслаждайтесь<br>изменениями к лучшему<br>вашего питомца!</p>
+          <span>4</span>
+      </div>
+         </section>
+        </main>
+    </body>
 </html>
