@@ -4,46 +4,43 @@
         <meta charset="UTF-8">
         <title>Кэт энерджи</title>
         <link rel="icon" href="img/Favicon/32.svg">
+        <link href="css/style.css" rel="stylesheet">
     </head>
-    <body class="page page__body">
-      <header class="page__body page-header">
-          <div class="user-nav">
-            <a href="#" class="page-header__logo">
-              <img  width="202" height="59" src="img/logo-desktop.svg" alt="логотип">
-            </a>
-          <h1>Функциональное<br>питание для котов</h1>
-          <p class="user-nav__slogan">Занялся собой? Займись котом!</p>
-          <a class="user-nav__button" href="forma.html">подобрать программу</a>
-          </div>
-          <nav class="main-nav">
-            <button class="main-nav__toggle hidden" type="button">
-                <span class="hidden">открыть меню</span></button>
-            <ul class="main-nav__list">
-                <li class="main-nav__item-carrent"><a href="index.html" >главная</a></li>
-                <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
-                <li class="main-nav__item"><a href="#">подбор программы</a></li>
-            </ul>
-            <img src="img/index-can.png" width="552" height="449" alt="стаканчик 500г питание для котов">
-        </nav>
-      </header>
+    <body class="page__forma">
+        <header class="page__forma forma-header">
+            <div class="user-nav">
+              <a href="#" class="forma-header__logo">
+                <img  width="202" height="59" src="img/logo-desktop.svg" alt="логотип">
+              </a>
+            </div>
+          <nav class="forma-nav">
+              <ul class="forma-nav__list">
+                  <li class="forma-nav__item carrent"><a href="index.html" >главная</a></li>
+                  <li class="forma-nav__item"><a href="catalog.html">каталог продукции</a></li>
+                  <li class="forma-nav__item"><a href="#">подбор программы</a></li>
+              </ul>
+          </nav>
+        </header>
           <main class="page__forma wrapper">
             <h1>Подбор программы</h1>
             <form class="questionnaire" action="#" method="post" class="forma">
               <fieldset class="questionnaire__aboutpets">
                 <legend>Заполните анкету, и мы подберем<br>программу питания для вашего кота</legend>
+                <div class="questionnaire__aboutpets-wrapper">
                 <ul class="aboutpet">
                   <li><label for="petname">ИМЯ:*</label>
-                  <input id="petname" type="text" name="pet-name" required placeholder="барсик">
+                  <input class="petname" id="petname" type="text" name="pet-name" required placeholder="барсик">
                   </li>
                   <li>
                   <label for="petwidth">Вес (кг):*</label>
-                  <input id="petwidth" type="text" name="pet-width" required placeholder="7">
+                  <input class="petwidth" id="petwidth" type="text" name="pet-width" required placeholder="7">
                   </li>
                 <li>
                   <label for="petage">Возраст (лет):</label>
-                  <input id="petage" type="text" name="pet-age" placeholder="7">
+                  <input class="petage"  id="petage" type="text" name="pet-age" placeholder="7">
                 </li>
                 </ul>
+               <div class="radiobuttons">
                 <ul class="radiolist">
                   <li>
                     <input class="hidden" id="fat" type="radio" checked>
@@ -58,13 +55,15 @@
                     <label for="unknown">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
+              </div>
+            </div>
               </fieldset>
               <fieldset class="questionnaire__aboutuser">
                 <legend>Контактные данные (владельца кота)</legend>
                   <ul class="userdata-list">
                     <li>
                       <label for="mail">E-mail:*</label>
-                      <input id="mail" type="email" name="usermail" placeholder="кuklachev@gmail.com">
+                    <input id="mail" type="email" name="usermail" placeholder="кuklachev@gmail.com">
                     </li>
                     <li>
                       <label for="phone">Телефон:*</label>
@@ -74,7 +73,7 @@
               </fieldset>
               <fieldset class="questionnaire__comments">
                   <legend>Комментарий</legend>
-                  <textarea name="aboutpet" rows="5" cols="150" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  <textarea name="aboutpet" rows="5" cols="100" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
               <fieldset class="questionnaire__checkbox">
                 <legend> Дополнительно</legend>
@@ -97,13 +96,14 @@
                   </li>
                 </ul>
               </fieldset>
-              <button type="submit" class="button button-form">отправить заявку</button>
+              <button type="submit" class="button-form">отправить заявку</button>
               <span>* — Обязательные поля</span>
             </form>
           </main>
-          <footer class="Page-footer wrapper">
+          <footer class="page__forma page-footer wrapper">
             <section class="map">
               <h2 class="hidden">как нас найти</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530567!2d30.320853351653714!3d59.93871916896525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1663174577227!5m2!1sru!2sby" width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               <div class="map__contacts">
                 <h3>приглашаем<br>к сотрудничеству<br>дилеров!</h3>
                 <p>ул. Большая<br>Конюшенная, д. 19/8
@@ -142,7 +142,7 @@
             </ul>
             <div class="copyright">
               <span>HTML Academy</span>
-              <a><img src="img/Логоhtml 1.svg" width="163" height="34" alt="логотип ссылка на HTML academy"></a></div>
+              <a><img src="img/Логоhtml 1.svg" width="27" height="34" alt="логотип ссылка на HTML academy"></a></div>
             </div>
           </div>
           </footer>
