@@ -5,31 +5,32 @@
         <title>Кэт энерджи</title>
         <link rel="icon" href="img/Favicon/32.svg">
         <link href="css/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body class="page page__body">
-        <header class="page__body page-header">
-            <div class="user-nav">
-              <a href="#" class="page-header__logo">
+        <header class="page-header conteiner">
+          <nav class="page-header__header-nav">
+            <div class="header-nav__logo-wrapper"><a href="#" class="logo">
                 <img  width="202" height="59" src="img/logo-desktop.svg" alt="логотип">
               </a>
+              <button class="nav__toggle" type="button">
+                <span class="hidden">открыть меню</span></button>
+             </div>
+                 <ul class="header-nav__list">
+                  <li class="header-nav__item carrent"><a class="header-nav__link" href="#" >главная</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="catalog.html">каталог продукции</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="forma.html">подбор программы</a></li>
+                </ul>
+            </nav>
+          <div class="page-header__promo">
             <h1>Функциональное<br>питание для котов</h1>
-            <p class="user-nav__slogan">Занялся собой? Займись котом!</p>
-            <a class="user-nav__button" href="forma.html">подобрать программу</a>
+            <p class="slogan">Занялся собой? Займись котом!</p>
+              <img class="cup" src="img/index-can.png" width="280" height="270" alt="стаканчик 500г питание для котов">
             </div>
-            <button class="main-nav__toggle hidden" type="button">
-              <span class="hidden">открыть меню</span></button>
-        <div class="main-nav picture-wrapper">
-          <nav class="main-nav">
-              <ul class="main-nav__list">
-                  <li class="main-nav__item-carrent"><a href="#" >главная</a></li>
-                  <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
-                  <li class="main-nav__item"><a href="forma.html">подбор программы</a></li>
-              </ul>
-              <img class="cup" src="img/index-can.png" width="552" height="449" alt="стаканчик 500г питание для котов">
-          </nav>
+          <a class="button-nav" href="forma.html">подобрать программу</a>
         </div>
         </header>
-       <main class="page__body page-main">
+       <main class="page-main">
          <section class="offer">
             <h2 class="hidden">предложения для худеющих и набирающих</h2>
             <div class="offer__wrapper">
@@ -124,7 +125,7 @@
             </div>
           </section>
         </main>
-          <footer class="page__body page-footer">
+          <footer class="page-footer">
             <section class="map">
               <h2 class="hidden">как нас найти</h2>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60362530567!2d30.320853351653714!3d59.93871916896525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1663174577227!5m2!1sru!2sby" width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

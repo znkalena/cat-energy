@@ -1,15 +1,33 @@
 .page{
-  max-width: 1440px;
   height: 100%;
-  background-color: @white;
   font-family: "osvaldregular","Arial",sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color:@black;
-  display: grid;
-  grid-template-rows:min-content 1fr min-content;
+  font-size: 14px;
+  line-height: 18px;
+
 }
-.page-body{
-  margin-left: 110px;
+.conteiner{
+  width: 280px;
+  padding: 0 20px;
 }
+.page__body{
+  min-height: 100%;
+  background-color: @white;
+  color:@special-black;
+  min-width: 320px;
+  @media (min-width:tablet-width) {
+  min-width: 768px;
+  .conteiner{
+    width: 708px;
+    padding: 0 30px;
+  }
+  }
+  @media (min-width:@descktop-width) {
+   min-width: 1440px;
+   .conteiner{
+    width: 1220px;
+    padding: 0 110px;
+   }
+  }
+}
+

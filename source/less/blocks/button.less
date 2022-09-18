@@ -1,35 +1,37 @@
-.button(@width:244px;@height:54px){
+.button(@width:280px;@height:40px){
   background-color: @green;
   width:@width ;
   height:@height;
   border: none;
   color: #ffffff;
 }
-.user-nav__button{
+.button{
+  &-nav{
   display: block;
   .button();
 }
-.button-midle{
+  &-midle{
   .button(168px;40px);
 }
-.button-big{
+  &-big{
   .button(244px;40px);
 }
-.button-tablet{
+  &-tablet{
   .button(248px;39px);
 }
-.button-mobile{
+  &-mobile{
   .button(280px;40px);
 }
-.button-long{
+  &-long{
   .button(632px;38px);
 }
-.button-showall{
+  &-showall{
   background-color: @grey;
   width: 169px;
   height: 40px;
 }
-.button-form{
+  &-form{
   .button(568px;52px);
   margin-left: 110px;
+}
 }
