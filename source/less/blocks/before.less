@@ -1,43 +1,78 @@
-/*.moduls dt{
-  width: 48px;
-  line-height: 37px;
+.modul dt{
+  line-height: 24px;
+  font-size: 24px;
+  @media (min-width:@tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+   }
 }
-.moduls dd{
-  font-size: 14px;
-  line-height: 14px;
+.modul dd{
+  font-size: 12px;
+  line-height: 12px;
+  @media (min-width:@tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+   }
+}
+.modul{
+  display: block;
+  width: 124px;
+  height: 64px;
+  border-radius: 1px solid #CDCDCD;
+  @media (min-width:@tablet-width) {
+    width: 162px;
+    height: 77px;
+   }
+}
+.moduls{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .modul-cost{
-  font-size: 20px;
+  font-size: 14px;
   line-height: 20px;
+  display: flex;
+  @media (min-width:@tablet-width) {
+    font-size: 20px;
+   }
 }
 .slider span{
   font-size: 20px;
   line-height: 30px;
 }
-.beforeafter div.wrapper{
-  width: 1440px;
-  height: 462px;
+.beforeafter{
+  width: 100%;
+  height:705px;
   background-color: @grey;
-  margin-left: 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .beforeafter h2{
-  margin-left: 110px;
+  font-size: 36px;
+  line-height: 40px;
+  @media (min-width:@tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+   }
 }
-.text-left{
-  width: 436px;
-  height: 317px;
-}
-.scale{
-  width: 428px;
-  height: 6px;
-  background-color: #DCDCDC;
-}
-.figure{
+.scroll{
   display: flex;
 }
-.figure img{
-  background-color: transparent;
-  margin-right: 0;
-}*/
+.scroll--scale{
+  width: 84px;
+  height: 14px;
+  background-color: #DCDCDC;
+}
+.scroll span{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.figire .fat{
+  width: 311px;
+  height: 232px;
+}
+.figure .slim{
+  display: none;
+}

@@ -31,7 +31,12 @@
   height: 40px;
 }
   &-form{
-  .button(568px;52px);
-  margin-left: 110px;
+  .button(280px;40px);
+  @media (min-width:@tablet-width) {
+    .button(282px;52px);
+  }
+  @media (min-width:@descktop-width){
+    .button(568px;52px);
+      }
 }
 }

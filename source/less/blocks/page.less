@@ -4,30 +4,37 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-
+  color: @black;
+  @media (min-width:@tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .conteiner{
   width: 280px;
   padding: 0 20px;
+  height: 3182px;
+ @media (min-width:@tablet-width) {
+  height: 4333px;
+  width: 708px;
+  padding: 0 30px;
+ }
+ @media (min-width:@descktop-width) {
+  height: 2809px;
+  width: 1220px;
+    padding: 0 110px;
+ }
 }
 .page__body{
   min-height: 100%;
   background-color: @white;
   color:@special-black;
   min-width: 320px;
-  @media (min-width:tablet-width) {
+  @media (min-width:@tablet-width) {
   min-width: 768px;
-  .conteiner{
-    width: 708px;
-    padding: 0 30px;
-  }
   }
   @media (min-width:@descktop-width) {
    min-width: 1440px;
-   .conteiner{
-    width: 1220px;
-    padding: 0 110px;
-   }
   }
 }
 
