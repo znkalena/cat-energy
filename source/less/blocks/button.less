@@ -4,6 +4,9 @@
   height:@height;
   border: none;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
 }
 .button{
   &-nav{
@@ -26,9 +29,9 @@
   .button(632px;38px);
 }
   &-showall{
+  .button(279px;40px);
   background-color: @grey;
-  width: 169px;
-  height: 40px;
+  color: #444444;
 }
   &-form{
   .button(280px;40px);
@@ -38,5 +41,13 @@
   @media (min-width:@descktop-width){
     .button(568px;52px);
       }
+}
+  &-additional{
+    .button(280px;40px);
+  @media (min-width:@tablet-width) {
+      .button(632px;38px)
+    }
+  @media (min-width:@descktop-width){
+  }  .button(244px;40px)
 }
 }
