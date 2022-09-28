@@ -7,11 +7,18 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  box-sizing: border-box
 }
 .button{
-  &-nav{
-  display: block;
+  &-promo{
   .button();
+  display: block;
+  padding-top: 10px;
+  @media (min-width:@tablet-width) {
+    .button(244px;54px);
+    margin-left: 117px;
+    font-size: 20px;
+  }
 }
   &-midle{
   .button(168px;40px);

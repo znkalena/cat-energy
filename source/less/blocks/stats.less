@@ -1,6 +1,7 @@
 .modul dt{
   line-height: 24px;
   font-size: 24px;
+  padding-top: 15px;
   @media (min-width:@tablet-width) {
     font-size: 30px;
     line-height: 37px;
@@ -9,13 +10,14 @@
 .modul dd{
   font-size: 12px;
   line-height: 12px;
+  margin-top: auto;
   @media (min-width:@tablet-width) {
     font-size: 14px;
     line-height: 14px;
    }
 }
 .modul{
-  display: block;
+
   width: 124px;
   height: 64px;
   border-radius: 1px solid #CDCDCD;
@@ -41,14 +43,14 @@
   font-size: 20px;
   line-height: 30px;
 }
-.beforeafter{
+.stats{
   width: 100%;
   height:705px;
   background-color: @grey;
   display: flex;
   flex-direction: column;
 }
-.beforeafter h2{
+.stats h2{
   font-size: 36px;
   line-height: 40px;
   @media (min-width:@tablet-width) {
@@ -75,4 +77,12 @@
 }
 .figure .slim{
   display: none;
+}
+.stats__stat p{
+  margin-left: 20px;
+}
+.stats__stat br{
+  @media (min-width:@tablet-width) {
+  display: none;
+}
 }

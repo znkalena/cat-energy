@@ -9,29 +9,29 @@
     </head>
     <body class="page page__body conteiner">
         <header class="page-header ">
-          <nav class="page-header__header-nav">
-            <div class="header-nav__logo-wrapper">
-            <a href="#" class="header-nav__logo-wrapper logo-left">
-              <img  width="33" height="37" src="img/logo-mobile.png" alt="логотип"></a>
-            <a href="#" class="header-nav__logo-wrapper logo-right "><img src="img/footer-logo.png" width="101" height="18" alt="логотип">
+  <nav class="header-nav header-nav--closed">
+            <a href="#" class="header-nav__logo-left">
+              <img class="logo-left" width="33" height="37" src="/img/logo-mobile.png" alt="логотип">
             </a>
-            <button class="toggle" type="button">
+            <a href="#" class="header-nav__logo-right">
+              <img class="logo-right" src="/img/footer-logo.png" width="101" height="18" alt="логотип футер">
+            </a>
+            <button class="header-nav__toggle" type="button">
               <span class="hidden">открыть меню</span></button>
-             </div>
-                 <ul class="header-nav__list">
-                  <li class="header-nav__item carrent"><a class="header-nav__link" href="#" >главная</a></li>
-                  <li class="header-nav__item"><a class="header-nav__link" href="catalog.html">каталог продукции</a></li>
-                  <li class="header-nav__item"><a class="header-nav__link" href="forma.html">подбор программы</a></li>
-                </ul>
             </nav>
+            <div class="list-wrapper header-nav--closed">
+                 <ul class="list">
+                  <li class="list__item list__item--carrent"><a class="list__link" href="#" >главная</a></li>
+                  <li class="list__item"><a class="list__link" href="catalog.html">каталог продукции</a></li>
+                  <li class="list__item"><a class="list__link" href="forma.html">подбор программы</a></li>
+                </ul>
+              </div>
           <div class="page-header__promo">
             <h1>Функциональное<br>питание для котов</h1>
             <p class="slogan">Занялся собой? Займись котом!</p>
-            <a class="button-nav" href="forma.html">подобрать программу</a>
+            <a class="button-promo" href="forma.html">подобрать программу</a>
               <img class="cup" src="img/index-can.png" width="280" height="270" alt="стаканчик 500г питание для котов">
-              <figure class="cat-wrap">
-              <img class="cat" src="/img/index-background-desktop.jpg" width="320" height="302px" alt="кот который облизывается" ></div>
-              </figure>
+              <div class="cat-wrap"><div class="cat"></div></div>
         </div>
         </header>
        <main class="page-main">
@@ -85,13 +85,13 @@
              </li>
             </ul>
           </section>
-          <section class="beforeafter">
+          <section class="stats">
             <h2>Живой пример</h2>
-              <article class="beforeafter__stats">
+              <article class="stats__stat">
                 <h3 class="hidden">левый блок до и после</h3>
-                 <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой
-                    обычный корм на Cat Energy Slim. Отличный результат
-                    без изнуряющих тренировок! При этом он не менял своих
+                 <p>Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой
+                    обычный корм на Cat Energy<br> Slim. Отличный результат
+                    без изнуряющих<br> тренировок! При этом он не менял своих<br>
                     привычек и по-прежнему спит по 16 часов в день.
                 </p>
                 <dl class="moduls">
@@ -109,7 +109,7 @@
                 </div>
               </dl>
               </article>
-              <article class="beforeafter__slider">
+              <article class="stats__slider">
                 <h3 class="hidden">фото кота до и после</h3>
                   <figure class="figure">
                     <img class="fat" src="img/cat-fat.png" width="405" height="536" alt="толстый кот">
@@ -170,5 +170,6 @@
             </div>
           </div>
           </footer>
-    </body>
+          <script src="/js/menu.js"></script>
+        </body>
 </html>
