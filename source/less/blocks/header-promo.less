@@ -5,52 +5,51 @@
   @media (min-width:@tablet-width) {
    height: 910px;
   }
-  @media (min-width:@descktop-width) {
+  @media (min-width:@desktop-width) {
     height: 696px;
   }
 }
 .cat-wrap{
   position: absolute;
-  background-color:rgba(104,183,56,0.85);
-  z-index: -1;
-  width: 100%;
+  width: 320px;
   height: 302px;
-  margin: 0;
-  padding: 0;
+  z-index: -2;
   top:0;
   left: 0;
   margin-bottom: 135px;
   @media (min-width:@tablet-width) {
-   background-color: transparent;
+   display: none;
   }
-  @media (min-width:@descktop-width) {
-    background-color:rgba(104,183,56,0.85);
-    background-position: 0 100%;
+  @media (min-width:@desktop-width) {
+    display: block;
     width: 720px;
     height: 694px;
-    transform: translateY(-105px);
-    left: 720px;
+    left:720px;
+    transform: translateY(-250px);
   }
 }
 .cat{
-  background-image: url(../../img/index-background-desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  z-index: 1;
   width:320px ;
   height: 302px;
   position: absolute;
   top:0;
   left: 0;
-  display: none;
+  z-index:-3;
+  /*@media(min-resolution:2dppx){
+  background-image: url(/img/background-mobile@2x.jpg);*/
   @media (min-width:@tablet-width) {
    display: none;
   }
-  @media (min-width:@descktop-width) {
-    background-position: 0 100%;
+  @media (min-width:@desktop-width) {
+  display: block;
+  width: 720px;
+  height: 694px;
+  left: 720px;
+  transform: translateY(-250px);
+  /*@media (min-resolution:2dppx) {
+    background-image: url(/img/background-desktop@2x.jpg);*/
   }
-
- }
+}
 .page-header__promo h1{
   color: @white;
   font-size: 36px;
@@ -83,6 +82,7 @@
 }
 .cup{
   position: absolute;
+  z-index: 4;
   top:150px;
   left:0px;
   width: 280px;
@@ -92,7 +92,7 @@
     height: 609px;
     top: 350px;
   }
-  @media (min-width:@descktop-width) {
+  @media (min-width:@desktop-width) {
     left: 600px;
     width: 552px;
     height: 499px;
@@ -116,7 +116,7 @@
   font-size: 18px;
   line-height: 24px;
   }
-  @media (min-width:@descktop-width) {
+  @media (min-width:@desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }

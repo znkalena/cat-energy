@@ -3,7 +3,7 @@
   @media (min-width:@tablet-width){
     margin-bottom: 0;
   }
-  @media (min-width:@descktop-width) {
+  @media (min-width:@desktop-width) {
     margin-bottom: 82px;
   }
 }
@@ -15,24 +15,27 @@
   min-height: 38px;
   margin-bottom: 17px;
   @media (min-width:@tablet-width) {
-    display: none;
   .header-nav__toggle,.header-nav__toggle::after,.header-nav__toggle::before{
-   opacity: 0;
+   display: none;
   }
 }
-@media (min-width:@descktop-width) {
+@media (min-width:@desktop-width) {
   min-height: 52px;
-  margin-top: 60px;
  }
 }
 .logo-left{
   width:34px ;
   height:38px ;
   @media (min-width:@tablet-width) {
-    display: none;
+    width: 174px;
+    height: 52px;
+  }
+  @media(min-width:@desktop-width){
+   width: 202px;
+   height: 59px;
+   margin-top: 53px;
   }
 }
-
 .logo-right{
   width:101px ;
   height:18px ;
@@ -83,40 +86,22 @@
   justify-content: space-between;
   cursor: pointer;
   @media (min-width:@tablet-width) {
-    width: 440px;
+    width: auto;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 269px;
-    &::after{
-      position: absolute;
-      content: '';
-      width: 174px;
-      height: 52px;
-      background: url(../../img/logo-tablet.png) no-repeat;
-      left: 30px;
-      @media (min-width:@descktop-width){
-        margin-left: 117px;
-      }
-    }
+    margin-left: 95px;
   }
-  @media (min-width:@descktop-width) {
+  @media (min-width:@desktop-width) {
     width: 478px;
-    margin-left: 800px;
+    margin-left: 720px;
     justify-content: space-between;
   }
 }
-.list::after{
-  &:hover{
-    opacity: 0.8;
-  }
-  &:active{
-    opacity: 0.6;
-  }
-}
+
 .list-wrapper{
   width: 100%;
-  @media (min-width:@descktop-width) {
-    margin-top: 80px;
+  @media (min-width:@desktop-width) {
+    margin-top: 69px;
   }
 }
 .list__link{
@@ -152,8 +137,10 @@
   }
    }
    }
-  @media (min-width:@descktop-width) {
+  @media (min-width:@desktop-width) {
     color: @white;
+    font-size: 20px;
+    line-height: 30px;
     &:active{
       position: relative;
       &::before{
@@ -175,7 +162,7 @@
   border-bottom: 2px solid @green;}
  }
  &--carrent{
- @media (min-width:@descktop-width) {
+ @media (min-width:@desktop-width) {
   border-bottom: 2px solid @white;
 }
  }
