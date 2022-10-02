@@ -134,9 +134,9 @@
         background-color:@green;
         top:68px;
       }
+    }
+   }
   }
-   }
-   }
   @media (min-width:@desktop-width) {
     color: @white;
     font-size: 20px;
@@ -167,4 +167,11 @@
 }
  }
 }
-
+.page-inner .list__item{
+  @media (min-width:@desktop-width) {
+  .list__link{ color:#111111;}
+   &--carrent{
+    border-bottom: 2px solid @green;
+   }
+  }
+}
