@@ -69,6 +69,9 @@
 .eco::after{
   .number();
   content: url(/img/1.png);
+  @media (max-width:@mobile-width-only) {
+   opacity: 0;
+  }
 }
 .simple::before{
   .icon();
@@ -77,6 +80,9 @@
 .simple::after{
   .number();
   content: url(/img/2.png);
+  @media (max-width:@mobile-width-only) {
+    opacity: 0;
+   }
 }
 .food::before{
   .icon();
@@ -85,6 +91,9 @@
 .food::after{
   .number();
   content: url(/img/3.png);
+  @media (max-width:@mobile-width-only) {
+    opacity: 0;
+   }
 }
 .alarm::before{
   .icon();
@@ -93,6 +102,9 @@
 .alarm::after{
   .number();
   content: url(/img/4.png);
+  @media (max-width:@mobile-width-only) {
+    opacity: 0;
+   }
 }
 .advantages h2{
   font-size: 36px;
