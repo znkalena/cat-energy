@@ -31,12 +31,11 @@
 .cat{
   width:320px ;
   height: 302px;
+  object-fit: cover;
   position: absolute;
   top:0;
   left: 0;
   z-index:-3;
-  @media(min-resolution:2dppx){
-  background-image: url(/img/index-background-mobile@2x.jpg);
   @media (min-width:@tablet-width) {
    display: none;
   }
@@ -46,12 +45,8 @@
   height: 694px;
   left: 720px;
   transform: translateY(-250px);
-  @media (min-resolution:2dppx) {
-    background-image: url(/img/index-background-desktop@2x.jpg);
-  }
 }
   }
-}
 .page-header__promo h1{
   color: @white;
   font-size: 36px;

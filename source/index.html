@@ -36,7 +36,7 @@
             <a class="button-promo" href="forma.html">подобрать программу</a>
               <img class="cup" src="img/index-can.png" width="280"  height="270" alt="стаканчик 500г питание для котов">
               <picture>
-                <source media="(min-width:1200px)" srcset="/img/background-desktop.jpg,/img/background-desktop@2x.jpg 2x">
+                <source media="(min-width:1200px)" srcset="/img/background-desktop.jpg">
               <img class="cat" src="/img/background-mobile.jpg"  width="320px" height="302px" alt="картинка кот">
             </picture>
               <img class="cat-wrap" src="/img/Rectangle 18.png" alt="зеленый фон">
@@ -95,33 +95,36 @@
           </section>
           <section class="stats">
             <h2>Живой пример</h2>
+            <div class="stats-wrapper">
               <article class="stats__stat">
                 <h3 class="hidden">левый блок до и после</h3>
-                 <p>Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой
+                 <p class="stats-result">Борис сбросил 5 кг за 2 месяца, просто<br> заменив свой
                     обычный корм на Cat Energy<br> Slim. Отличный результат
                     без изнуряющих<br> тренировок! При этом он не менял своих<br>
                     привычек и по-прежнему спит по 16 часов в день.
                 </p>
-                <dl class="moduls">
-                <div class="moduls modul">
-                  <dt >5 КГ</dt>
-                  <dd>снижение веса</dd>
+                <div class="moduls">
+                <div class="modul">
+                  <span class="dt" >5 КГ</span>
+                  <span class="dd">снижение веса</span>
                 </div>
-                <div class="moduls modul">
-                  <dt>60 ДНЕЙ</dt>
-                  <dd>затрачено времени</dd>
+                <div class="modul">
+                  <span class="dt">60 ДНЕЙ</span>
+                  <span class="dd">затрачено времени</span>
                 </div>
-                <div class="moduls modul-cost">
-                  <p >Затраты на питание: <p>
+                <div class="modul-cost">
+                  <p >Затраты на питание:</p>
                   <span>15 000 РУБ.</span>
                 </div>
-              </dl>
+                </div>
               </article>
               <article class="stats__slider">
                 <h3 class="hidden">фото кота до и после</h3>
                   <picture">
-                    <img class="fat" src="img/cat-fat.png" width="405" height="536" alt="толстый кот">
-                    <img class="slim" src="img/cat-skinny.png" width="325" height="654" alt="тощий кот">
+                  <source type="image/webp" srcset="/img/cat-fat.webp,/img/cat-fat@2x.webp">
+                    <img class="scale-cat scale-cat--fat" src="/img/cat-fat.jpg" width="311" height="232" alt="толстый кот">
+                    <source type="image/webp" srcset="/img/cat-skinny.webp" >
+                    <img class="scale-cat scale-cat--slim" src="/img/cat-skinny.jpg"   width="325" height="654" alt="тощий кот">
                   </picture>
                 <div class="scroll">
                   <span class="scroll--left">было</span>
@@ -129,7 +132,7 @@
                   <span class="scroll--right">стало</span>
                 </div>
               </article>
-            </div>
+          </div>
           </section>
         </main>
           <footer class="page-footer ">
