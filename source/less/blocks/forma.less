@@ -51,19 +51,6 @@ legend{
   margin-bottom: 69px;
   }
 }
-.radiobuttons{
-  width: 320px;
-  height: 115px;
-  border-bottom: 1px solid @grey;
-  border-top: 1px solid @grey;
-  @media (min-width:@tablet-width){
-    width: 628px;
-    height: 200px;
-}
-@media (min-width:@desktop-width){
-    width: 568px;
-}
-}
 .sizeinput(@size;@line){
   font-size: @size;
   line-height: @line;
@@ -136,7 +123,17 @@ legend{
   margin-bottom:@bottom;
   border: 1px solid #E7E7E7
 }
+.aboutpet input:hover{
+  border: 1px solid #CDCDCD;
+}
+.aboutpet input:focus{
+  border: 2px solid #444444;
+}
+input.error{
+  border: 2px solid #FF8282;
+}
 .mail{
+  position:relative;
   .input(219px;45px;14px);
   @media (min-width:@tablet-width){
     .input(551px;52px;20px);
@@ -145,6 +142,14 @@ legend{
     .input(486px;50px;0);
     }
 }
+ /*.mail::after{
+  position: absolute;
+  content: '';
+  background-image: url(/img/icon_email.svg);
+  width:20px;
+  height: 14px;
+  left: 10px;
+}*/
 .phone{
   .input(204px;45px;0);
   @media (min-width:@tablet-width){
@@ -154,6 +159,22 @@ legend{
     .input(472px;50px;0);
     }
 }
+svg.phone{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: none;
+  right: 70px;
+  transform: translateY(10px)
+}
+/*.phone input[placeholder]::after{
+  position: absolute;
+  content:'' ;
+  background-image:url(/img/phone.svg) ;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+}*/
 input.petname{
   .input(228px;46px;13px);
   @media (min-width:@tablet-width){
@@ -181,10 +202,7 @@ input.petage{
     .input(436px;52px;0);
     }
 }
-.radiolist label{
-  display: block;
-  margin-bottom: 13px;
-}
+
 .questionnaire__aboutuser legend,.questionnaire__comments legend{
   margin-bottom: 37px;
   @media (min-width:@tablet-width){
@@ -226,4 +244,3 @@ input.petage{
  height: 174px  ;
 }
 }
-

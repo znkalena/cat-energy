@@ -26,7 +26,7 @@
              <ul class="list list-inner">
               <li class="list__item list__item--carrent"><a class="list__link" href="index.html" >главная</a></li>
               <li class="list__item"><a class="list__link" href="catalog.html">каталог продукции</a></li>
-              <li class="list__item"><a class="list__link" href="#">подбор программы</a></li>
+              <li class="list__item"><a class="list__link--carrent" href="#">подбор программы</a></li>
             </ul>
           </div>
         </nav>
@@ -45,23 +45,23 @@
                   <label for="petwidth">Вес (кг):*</label>
                   <input class="petwidth" id="petwidth" type="text" name="pet-width" required placeholder="7">
                   </li>
-                <li>
-                  <label for="petage">Возраст (лет):</label>
+                <li >
+                  <label  for="petage">Возраст (лет):</label>
                   <input class="petage"  id="petage" type="text" name="pet-age" placeholder="7">
                 </li>
                 </ul>
                <div class="radiobuttons">
                 <ul class="radiolist">
                   <li>
-                    <input class="hidden" id="fat" type="radio" checked>
+                    <input class="radio-input hidden" id="fat" type="radio" checked>
                     <label for="fat">похудение</label>
                   </li>
                   <li>
-                    <input class="hidden" id="slim" type="radio">
+                    <input class="radio-input hidden" id="slim" type="radio">
                     <label for="slim">Набор массы</label>
                   </li>
                   <li>
-                    <input class="hidden" id="unknown" type="radio">
+                    <input class="radio-input hidden" id="unknown" type="radio" disabled>
                     <label for="unknown">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
@@ -73,11 +73,13 @@
                   <ul class="userdata-list">
                     <li>
                       <label for="mail">E-mail:*</label>
-                    <input class="mail" id="mail" type="email" name="usermail" placeholder="кuklachev@gmail.com">
+                    <input class="mail" id="mail" type="email" name="usermail" placeholder="кuklachev@gmail.com ">
+
                     </li>
                     <li>
                       <label for="phone">Телефон:*</label>
                       <input class="phone" id="phone" type="tel" name="userphone" placeholder="8 (960) 900-60-90">
+                      <svg class="phone"><use xlink:href="/img/sprite.svg#phone"></use></svg>
                     </li>
                 </ul>
               </fieldset>
