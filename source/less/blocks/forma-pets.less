@@ -1,0 +1,61 @@
+.questionnaire__aboutpets-wrapper{
+  @media (min-width:@desktop-width){
+  display: grid;
+  grid-template-columns: 625px 625px;
+  column-gap: 80px;
+  margin-left: 110px;
+}
+}
+.questionnaire__aboutpets legend{
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 39px;
+  @media (min-width:@tablet-width){
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 66px;
+}
+}
+.questionnaire__aboutpets{
+  border: none;
+  margin-bottom: 26px;
+  @media (min-width:@tablet-width){
+  margin-bottom: 71px;
+}
+@media (min-width:@desktop-width){
+  margin-bottom: 69px;
+  }
+}
+.questionnaire__aboutpets label,.questionnaire__aboutpets input[placeholder]{
+  .sizeinput(16px;18px);
+  @media (min-width:@tablet-width){
+   .sizeinput(20px;30px);
+  }
+}
+input.petname{
+  .input(228px;46px;13px);
+  @media (min-width:@tablet-width){
+    .input(567px;52px;20px);
+  }
+  @media (min-width:@desktop-width){
+    .input(506px;52px;20px);
+    }
+}
+input.petwidth{
+  .input(204px;45px;10px);
+  @media (min-width:@tablet-width){
+    .input(536px;52px;20px);
+  }
+  @media (min-width:@desktop-width){
+    .input(475px;52px;20px);
+    }
+}
+input.petage{
+  .input(172px;45px;27px);
+  @media (min-width:@tablet-width){
+    .input(497px;52px;72px);
+  }
+  @media (min-width:@desktop-width){
+    .input(436px;52px;0);
+    }
+}

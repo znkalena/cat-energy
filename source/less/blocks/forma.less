@@ -6,15 +6,6 @@
 @media (min-width:@desktop-width){
 margin-bottom: 82px;
 }}
-
-.questionnaire__aboutpets-wrapper{
-  @media (min-width:@desktop-width){
-  display: grid;
-  grid-template-columns: 625px 625px;
-  column-gap: 80px;
-  margin-left: 110px;
-}
-}
 .page__forma h1{
  font-size: 36px;
  line-height: 36px;
@@ -31,178 +22,6 @@ legend{
   line-height: 36px;
 }
 }
-.questionnaire__aboutpets legend{
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 39px;
-  @media (min-width:@tablet-width){
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 66px;
-}
-}
-.questionnaire__aboutpets{
-  border: none;
-  margin-bottom: 26px;
-  @media (min-width:@tablet-width){
-  margin-bottom: 71px;
-}
-@media (min-width:@desktop-width){
-  margin-bottom: 69px;
-  }
-}
-.sizeinput(@size;@line){
-  font-size: @size;
-  line-height: @line;
-  color: #222222;
-  text-transform: uppercase;
-}
-.questionnaire__aboutpets label,.questionnaire__aboutpets input[placeholder]{
-   .sizeinput(16px;18px);
-   @media (min-width:@tablet-width){
-    .sizeinput(20px;30px);
-   }
-}
-.questionnaire__aboutuser,.questionnaire__aboutuser input[placeholder]{
-  .sizeinput(16px;18px);
-  @media (min-width:@tablet-width){
-   .sizeinput(20px;30px);
-  }
-}
-.questionnaire__comments,.questionnaire__comments textarea[placeholder]{
-  .sizeinput(16px;18px);
-  @media (min-width:@tablet-width){
-   .sizeinput(20px;30px);
-  }
-}
-.questionnaire__checkbox,.questionnaire__checkbox input[placeholder]{
-  .sizeinput(16px;18px);
-  @media (min-width:@tablet-width){
-   .sizeinput(20px;30px);
-  }
-}
- .border( ){
-  border-top:2px solid @green;
-  border-bottom:none;
-  border-left:none;
-  border-right:none;
-}
-.questionnaire__aboutuser{
-  .border();
-  margin-bottom: 23px;
-  @media (min-width:@tablet-width){
-  margin-bottom: 65px;
-  }
-  @media (min-width:@desktop-width){
-  margin-bottom: 69px;
-  }
-}
-.questionnaire__comments{
-  .border();
-  margin-bottom: 23px;
-  @media (min-width:@tablet-width){
-    margin-bottom: 65px;
-    }
-    @media (min-width:@desktop-width){
-    margin-bottom: 67px;
-    }
-}
-.questionnaire__checkbox{
-  .border();
-  margin-bottom: 32px;
-  @media (min-width:@tablet-width){
-    margin-bottom: 72px;
-    }
-    @media (min-width:@desktop-width){
-    margin-bottom: 82px;
-    }
-}
-.input(@width;@height;@bottom){
-  width: @width;
-  height:@height;
-  margin-bottom:@bottom;
-  border: 1px solid #E7E7E7
-}
-.aboutpet input:hover{
-  border: 1px solid #CDCDCD;
-}
-.aboutpet input:focus{
-  border: 2px solid #444444;
-}
-input.error{
-  border: 2px solid #FF8282;
-}
-.mail{
-  position:relative;
-  .input(219px;45px;14px);
-  @media (min-width:@tablet-width){
-    .input(551px;52px;20px);
-  }
-  @media (min-width:@desktop-width){
-    .input(486px;50px;0);
-    }
-}
- /*.mail::after{
-  position: absolute;
-  content: '';
-  background-image: url(/img/icon_email.svg);
-  width:20px;
-  height: 14px;
-  left: 10px;
-}*/
-.phone{
-  .input(204px;45px;0);
-  @media (min-width:@tablet-width){
-    .input(535px;52px;20px);
-  }
-  @media (min-width:@desktop-width){
-    .input(472px;50px;0);
-    }
-}
-svg.phone{
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border: none;
-  right: 70px;
-  transform: translateY(10px)
-}
-/*.phone input[placeholder]::after{
-  position: absolute;
-  content:'' ;
-  background-image:url(/img/phone.svg) ;
-  width: 20px;
-  height: 20px;
-  left: 20px;
-}*/
-input.petname{
-  .input(228px;46px;13px);
-  @media (min-width:@tablet-width){
-    .input(567px;52px;20px);
-  }
-  @media (min-width:@desktop-width){
-    .input(506px;52px;20px);
-    }
-}
-input.petwidth{
-  .input(204px;45px;10px);
-  @media (min-width:@tablet-width){
-    .input(536px;52px;20px);
-  }
-  @media (min-width:@desktop-width){
-    .input(475px;52px;20px);
-    }
-}
-input.petage{
-  .input(172px;45px;27px);
-  @media (min-width:@tablet-width){
-    .input(497px;52px;72px);
-  }
-  @media (min-width:@desktop-width){
-    .input(436px;52px;0);
-    }
-}
-
 .questionnaire__aboutuser legend,.questionnaire__comments legend{
   margin-bottom: 37px;
   @media (min-width:@tablet-width){
@@ -215,32 +34,36 @@ input.petage{
   margin-bottom: 57px;
 }
 }
-.userdata-list {
-  @media (min-width:@tablet-width){
-  display: flex;
-  justify-content: space-around;
-  }
+.sizeinput(@size;@line){
+  font-size: @size;
+  line-height: @line;
+  color: #222222;
+  font-family:"osvaldregular",Arial,sans-serif ;
+  font-weight: 400;
+  text-transform: uppercase;
 }
-.checkbox-list{
-  @media (min-width:@tablet-width){
-  display: flex;
-  flex-wrap: wrap;
-  }
+ .border( ){
+  border-top:2px solid @green;
+  border-bottom:none;
+  border-left:none;
+  border-right:none;
 }
-.checkbox-list li{
-  display: block;
-  width: 221px;
-  height: 40px;
-  margin-right: 123px;
+.input(@width;@height;@bottom){
+  width: @width;
+  height:@height;
+  margin-bottom:@bottom;
+  border: 1px solid #E7E7E7
 }
-.checkbox-list li:last-child{
-  margin-right: 0;
+ input:hover{
+  border: 1px solid #CDCDCD;
 }
-.questionnaire__comments textarea{
- width: 280px;
- height: 150px;
- @media (min-width:@tablet-width){
- width: 631px;
- height: 174px  ;
+ input:focus{
+  border: 2px solid #444444;
 }
+input.error{
+  border: 2px solid #FF8282;
 }
+
+
+
+

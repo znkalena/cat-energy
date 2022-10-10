@@ -1,0 +1,81 @@
+.userdata-list {
+  @media (min-width:@desktop-width){
+  display: flex;
+  justify-content: space-around;
+  }
+}
+.userdata__list input[placeholder]{
+  .sizeinput(16px;18px);
+  @media (min-width:@tablet-width){
+   .sizeinput(20px;30px);
+  }
+}
+.mail{
+  .input(219px;45px;14px);
+  @media (min-width:@tablet-width){
+    .input(551px;52px;20px);
+  }
+  @media (min-width:@desktop-width){
+    .input(486px;50px;0);
+    }
+}
+.phone{
+  .input(219px;45px;0);
+  @media (min-width:@tablet-width){
+    .input(535px;52px;20px);
+  }
+  @media (min-width:@desktop-width){
+    .input(472px;50px;0);
+    }
+}
+.svg-mail{
+  width: 20px;
+  height:15px;
+  position: absolute;
+  border: none;
+  right: 70px;
+  transform: translateY(15px);
+  stroke:#222222;
+}
+.svg-phone{
+  width: 20px;
+  height: 21px;
+  position: absolute;
+  border: none;
+  right:70px;
+  transform: translateY(10px);
+  color:#222222;
+}
+.userdata__item-phone:focus .svg-phone,.userdata__item-mail:focus .svg-mail{
+  color: @green;
+}
+ .error .svg-phone,.errror .svg-mail{
+  color:#ff8282;
+ }
+.questionnaire__aboutuser{
+  .border();
+  margin-bottom: 23px;
+  @media (min-width:@tablet-width){
+  margin-bottom: 65px;
+  }
+  @media (min-width:@desktop-width){
+  margin-bottom: 69px;
+  }
+}
+
+/*.phone input[placeholder]::after{
+  position: absolute;
+  content:'' ;
+  background-image:url(/img/phone.svg) ;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+}*/
+/*.mail::after{
+  position: absolute;
+  content: '';
+  background-image: url(/img/icon_email.svg);
+  width:20px;
+  height: 14px;
+  left: 10px;
+}*/
