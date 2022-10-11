@@ -8,7 +8,7 @@
   .border();
   margin-bottom: 32px;
   @media (min-width:@tablet-width){
-    margin-bottom: 72px;
+    margin-bottom: 54px;
     }
     @media (min-width:@desktop-width){
     margin-bottom: 82px;
@@ -17,7 +17,8 @@
 .checkbox-list{
   @media (min-width:@tablet-width){
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
+  margin-left: 70px;
   }
 }
 .checkbox-list li{
@@ -25,13 +26,21 @@
   position: relative;
   width: 221px;
   height: 40px;
-  margin-right: 123px;
-  margin-left: 30px;
+  margin-left:30px ;
   font-size: 16px;
   line-height: 18px;
   font-family: "osvaldregular";
   font-weight: 400;
   text-transform: uppercase;
+  @media (min-width:@tablet-width){
+    margin: 0;
+    &:nth-child(2n-1){
+      margin-right: 123px;
+    }
+    }
+    @media (min-width:@desktop-width){
+      margin-right:104px;
+      }
 }
 .checkbox-list li:last-child{
   margin-right: 0;
@@ -54,4 +63,11 @@
  background-repeat: no-repeat;
  top: -5px;
  left: -30px;
+}
+.questionnaire__checkbox legend{
+  margin-bottom: 34px;
+  text-transform: none;
+  @media (min-width:@tablet-width){
+  margin-bottom: 57px;
+}
 }

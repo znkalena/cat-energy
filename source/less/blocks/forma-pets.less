@@ -1,24 +1,32 @@
 .questionnaire__aboutpets-wrapper{
+  @media (min-width:@tablet-width){
+    margin-left: 71px;
+  }
   @media (min-width:@desktop-width){
   display: grid;
   grid-template-columns: 625px 625px;
   column-gap: 80px;
   margin-left: 110px;
+  }
 }
-}
-.questionnaire__aboutpets legend{
+.questionnaire__aboutpets h2{
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 39px;
+  text-transform: uppercase;
   @media (min-width:@tablet-width){
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 66px;
+  @media (min-width:@desktop-width){
+    margin-left:110px;
+    }
 }
 }
 .questionnaire__aboutpets{
   border: none;
   margin-bottom: 26px;
+  padding: 0;
   @media (min-width:@tablet-width){
   margin-bottom: 71px;
 }

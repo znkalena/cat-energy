@@ -12,7 +12,11 @@ margin-bottom: 82px;
  @media (min-width:@tablet-width) {
   font-size: 60px;
   line-height: 60px;
+  margin-left: 71px;
 }
+@media (min-width:@desktop-width){
+  margin-left:110px;
+  }
 }
 legend{
   font-size: 24px;
@@ -20,20 +24,14 @@ legend{
   @media (min-width:@tablet-width){
   font-size: 36px;
   line-height: 36px;
+  margin-left: 71px;
+  padding: 0;
 }
-}
-.questionnaire__aboutuser legend,.questionnaire__comments legend{
-  margin-bottom: 37px;
-  @media (min-width:@tablet-width){
-  margin-bottom: 76px;
+@media (min-width:@desktop-width){
+  margin-left:110px;
   }
 }
-.questionnaire__checkbox legend{
-  margin-bottom: 34px;
-  @media (min-width:@tablet-width){
-  margin-bottom: 57px;
-}
-}
+
 .sizeinput(@size;@line){
   font-size: @size;
   line-height: @line;
