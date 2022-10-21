@@ -115,17 +115,28 @@
               </article>
               <article class="stats__slider">
                 <h3 class="hidden">фото кота до и после</h3>
-                  <picture">
-                  <source type="image/webp" srcset="/img/cat-fat.webp,/img/cat-fat@2x.webp">
-                    <img class="scale-cat scale-cat--fat" src="/img/cat-fat.jpg" width="311" height="232" alt="толстый кот">
-                    <source type="image/webp" srcset="/img/cat-skinny.webp" >
-                    <img class="scale-cat scale-cat--slim" src="/img/cat-skinny.jpg"   width="325" height="654" alt="тощий кот">
+                  <picture class="scale-cat scale-cat--fat" >
+                    <source media="(min-width:1200px)" srcset="/img/before-desktop.jpg">
+                <source media="(min-width:768px)" srcset="/img/before-tablet.jpg">
+                    <img  src="/img/before-mobile.jpg" width="311" height="240" alt="толстый кот">
                   </picture>
-                <div class="scroll">
-                  <span class="scroll--left">было</span>
-                  <div class="scroll--scale"></div>
-                  <span class="scroll--right">стало</span>
-                </div>
+                    <picture class="scale-cat scale-cat--slim">
+                      <source media="(min-width:1200px)" srcset="/img/after-desktop.jpg">
+                      <source media="(min-width:768px)" srcset="/img/after-tablet.jpg">
+                    <img  src="/img/after-mobile.jpg"   width="311" height="240" alt="тощий кот">
+                  </picture>
+                <form class="filter" method="get" action="#" target="_blank">
+                <fieldset >
+                  <legend>фильтр тип рэйндж</legend>
+                  <div class="scroll">
+                  <span class="scroll__show scroll__show--left ">было</span>
+                  <div class="scroll__ruler">
+                  <div class="marker"  style="width:50%;"></div>
+                  </div>
+                  <span class="scroll__show scroll__show--right">стало</span>
+                  </div>
+                </fieldset>
+                </form>
               </article>
           </div>
           </section>
