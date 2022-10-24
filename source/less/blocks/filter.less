@@ -2,9 +2,25 @@
   padding: 0;
   margin: 0;
   border: none;
+  @media (min-width:@tablet-width) {
+    padding-top:351px;
+    height: 34px;
+    }
 }
 form.filter{
   margin-top: 297px;
+  @media (min-width:@tablet-width) {
+  margin-top:250px;
+  width: 100%;
+  height: 462px;
+  background-color: #EAEAEA;
+  }
+  @media (min-width:@desktop-width) {
+    background-color: transparent;
+    height: 34px;
+    margin-top: 0;
+    margin-bottom: 67px;
+  }
 }
 .filter fieldset legend{
   display: none;
@@ -17,14 +33,28 @@ form.filter{
   text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
+  @media (min-width:@tablet-width) {
+    text-align: start;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top:5px ;
+  }
 }
 .scroll__show--left{
   margin-right: 2px;
   margin-left: 47px;
+  @media (min-width:@tablet-width) {
+   margin-left: 86px;
+   margin-right: 14px;
+  }
 }
 .scroll__show--right{
   margin-left: 2px;
   margin-right: 45px;
+  @media (min-width:@tablet-width) {
+    margin-left: 11px;
+    margin-right: 92px;
+  }
 }
 .scroll__ruler{
   width: 84px;
@@ -33,6 +63,12 @@ form.filter{
   border: 1px solid #CDCDCD;
   border-radius: 5px;
   margin-top: 20px;
+  @media (min-width:@tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color:@special-grey;
+
+  }
 }
 .marker{
   background-color: @green;
@@ -41,6 +77,18 @@ form.filter{
   border: none;
   border-radius: 6px;
   margin-top: 3px;
+  @media (min-width:@tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius:0 ;
+    margin: 0;
+    background-color: transparent;
+   background-image:url(/img/slider\ control.svg) ;
+   background-repeat: no-repeat;
+   position: absolute;
+   margin-left: 214px;
+   top:355px;
+  }
 }
 .scroll{
   display: flex;
@@ -50,33 +98,38 @@ form.filter{
   width: 311px;
   height: 240px;
   position: absolute;
-  background-color: transparent;
   @media (min-width:@tablet-width) {
     width: 354px;
     height: 620px;
-    position: static;
 }
-@media (min-width:@desktop-width) {
-  position: absolute;
+  @media (min-width:@desktop-width) {
   width: 405px;
   height: 536px;
 }
 }
 .scale-cat--fat{
- max-height: 240px;
- top:345px;
- z-index: 1;
+ height: 240px;
+ @media (min-width:@tablet-width) {
+  position: absolute;
+  top:-250px;
+  left: 40px;
+}
  @media (min-width:@desktop-width) {
-  left: 680px;
-  top:-50px;
-  z-index: 0;
+  top: -150px;
 }
   }
 .scale-cat--slim{
-  top:345px;
-  max-height: 240px;
+  top: 0;
+  height: 240px;
+  display: none;
+  @media (min-width:@tablet-width) {
+   display: block;
+   position: absolute;
+    left: 355px;
+    top: -250px;
+  }
   @media (min-width:@desktop-width) {
-   right: 70px;
-   top:-50px;
+   left: 330px;
+
   }
 }
